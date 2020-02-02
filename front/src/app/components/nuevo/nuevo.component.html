@@ -1,0 +1,93 @@
+<app-navbar></app-navbar>
+
+<!-- <img src="../../../../../back/public/images/image-1580203361599.jpg"> -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1>
+            Agregar Noticia
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+
+
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Titulo</label>
+            <input id="titulo" type="text" class="form-control" placeholder="Titulo">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Subtitulo</label>
+        <input id="sub" type="text" class="form-control" placeholder="Subtitulo">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Sección</label>
+        <select class="form-control" id="select">
+          <option>Boca</option>
+          <option>River</option>
+          <option>Real</option>
+          <option>Barcelona</option>
+          <option>Inter</option>
+          <option>Milan</option>
+          <option>United</option>
+          <option>Liverpool</option>
+          <option>PSG</option>
+          <option>Bayern</option>
+          <option>Liga</option>
+          <option>Bundesliga</option>
+          <option>Ligue1</option>
+          <option>SerieA</option>
+          <option>Premier</option>
+          <option>Liber</option>
+          <option>Suda</option>
+          <option>Champions</option>
+          <option>Europa</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label>Seleccionar Imagen</label>
+        <input accept="image/x-png,image/gif,image/jpeg" ng2FileSelect [uploader]="uploader" name="image" type="file" class="form-control-file">
+        <span  class="input-group-text upload"  id="btnUpload">Cargar</span>
+      </div>
+
+
+      
+
+
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="exampleRadios1" value="principal" checked [(ngModel)]="myRadio" name="myRadio">
+        <label class="form-check-label" for="exampleRadios1">
+          Noticia Principal
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="exampleRadios2" value="home" [(ngModel)]="myRadio" name="myRadio">
+        <label class="form-check-label" for="exampleRadios2">
+          Noticia en la Home
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="exampleRadios3" value="normal" [(ngModel)]="myRadio" name="myRadio">
+        <label class="form-check-label" for="exampleRadios2">
+          Noticia Normal
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Texto</label>
+        <textarea id="texto" class="form-control" rows="3" placeholder="Texto"></textarea>
+      </div>
+      <button (click)="agregar()" type="button" class="btn btn-success btn-lg btn-block">Agregar</button>
+    </form>
+
+      </div>
+    </div>
+
+
+</div>

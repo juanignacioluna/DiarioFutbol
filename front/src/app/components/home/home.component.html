@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+<!-- <div class="container-fluid"> -->
+  <div class="row">
+    <div class="col-sm" *ngFor="let principal1 of principal | async">
+      <a [routerLink]="['/noticia', principal1._id]"
+      style="color: rgb(0, 0, 0); text-decoration: none;" href="#"><div class="card">
+        <div class="card-body">
+          <h3 style="text-align: center;" class="card-title">{{principal1.titulo}}</h3>
+          <p style="text-align: center;" class="card-text">{{principal1.sub}}</p>
+        </div>
+        <img 
+        src=
+        {{principal1.img}}
+        class="card-img-top">
+      </div></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-12" *ngFor="let noti of notis | async">
+
+
+        <a [routerLink]="['/noticia', noti._id]" style="color: rgb(0, 0, 0); text-decoration: none;"><div class="card">
+          <img 
+          src= 
+          {{noti.img}}
+          class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{noti.titulo}}</h5>
+            <p class="card-text">{{noti.sub}}</p>
+          </div>
+        </div></a>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- </div> -->
+
+
+
+
+
+
+

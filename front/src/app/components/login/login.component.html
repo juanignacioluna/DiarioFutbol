@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<h1 style="text-align: center;">LOGIN</h1>
+
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Usuario</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input id="usuario" type="text" class="form-control" placeholder="Nombre de usuario">
+    </div>        
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Contraseña</label>
+    <input id="password" type="password" class="form-control" placeholder="Contraseña">
+  </div>
+  <button (click)="login()" type="button" class="btn btn-danger btn-lg btn-block">Iniciar Sesión</button>
+</form>
+
+<button [routerLink]="['/registro']" 
+style="margin-top: 10px;" type="button" class="btn btn-dark btn-lg btn-block">Registrarse</button>

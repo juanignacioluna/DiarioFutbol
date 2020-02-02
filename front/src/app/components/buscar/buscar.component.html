@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+
+
+      <h1>Lista de Resultados</h1>
+
+      <hr>
+      
+
+    </div>
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-12" *ngFor="let noti of noticias">
+
+
+        <a [routerLink]="['/noticia', noti._id]" style="color: rgb(0, 0, 0); text-decoration: none;"><div class="card">
+          <img 
+          src= 
+          {{noti.img}}
+          class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{noti.titulo}}</h5>
+            <p class="card-text">{{noti.sub}}</p>
+          </div>
+        </div></a>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</div>

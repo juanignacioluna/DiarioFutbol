@@ -1,0 +1,145 @@
+<app-navbar></app-navbar>
+
+
+<!-- <img src="http://localhost:3000/images/image-1580203695853.jpg" alt="">
+
+<img [src]="AAAAAA"> -->
+
+<div class="container">
+
+
+    <div class="row">
+      <div class="col-sm">
+
+
+        <div [innerHTML]="borrar" (click)="getRoute($event)" class="nav-item" routerLinkActive="active">
+
+        </div>
+
+
+
+      </div>
+
+      <div class="col-sm">
+
+        <div [innerHTML]="editar" (click)="editar3()" class="nav-item" routerLinkActive="active">
+
+        </div>
+
+        <div id="divGuardar" (click)="guardar()" class="nav-item" routerLinkActive="active"></div>
+
+
+
+      </div>
+
+
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-sm">
+        <h6><strong><span id="seccion">{{seccion}}</span><span id="coso"> || </span></strong><span id="sub">{{sub}}</span></h6>
+        <h1 id="titulo">
+            {{titulo}}
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col">
+          <img id="foto" style="width: 750px; margin-top: 20px;" 
+          src=
+          {{img}}
+          class="img-thumbnail">
+
+          <br>
+
+          <button id="editarImgBtn" (click)="editarImgBtn()" type="button" style="margin-top: 20px;"  class="btn btn-outline-warning btn-lg btn-block">
+            Editar Imagen</button>
+
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+
+
+
+
+        <input id="cargarFoto" type="hidden" accept="image/x-png,image/gif,image/jpeg" ng2FileSelect [uploader]="uploader" name="image" class="form-control-file">
+
+
+        <div id="tipoNoti" class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col">
+
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="exampleRadios1" value="principal" checked [(ngModel)]="myRadio2" name="myRadio2">
+              <label class="form-check-label" for="exampleRadios1">
+                Noticia Principal
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="exampleRadios2" value="home" [(ngModel)]="myRadio2" name="myRadio2">
+              <label class="form-check-label" for="exampleRadios2">
+                Noticia en la Home
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="exampleRadios3" value="normal" [(ngModel)]="myRadio2" name="myRadio2">
+              <label class="form-check-label" for="exampleRadios3">
+                Noticia Normal
+              </label>
+            </div>
+
+            <!-- <button (click)="aa()">aaaa</button> -->
+
+
+
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+
+
+
+
+
+
+
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col">
+
+          <p style="text-align: justify; 
+                    text-indent:50px;
+                    font-family: PTregular,Georgia;
+                    font-size: 18px;
+                    line-height: 140%;
+                    border: 0;
+                    box-sizing: inherit;
+                    display: block;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    outline: 0;
+                    padding: 10px 0;
+                    color: #222;" id="texto">
+            
+            {{texto}}
+
+        </p>
+
+
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+
+</div>
