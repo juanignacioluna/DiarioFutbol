@@ -354,20 +354,6 @@ app.post("/editar", function (req, res) {
                 break;
             }
 
-            // if(err){
-            //   this.imgBool="http://localhost:4200/assets/img/noticias/ney.jpg";
-            // }
-
-            // this.imgBool="http://localhost:4200/assets/img/noticias/messi.jpg";
-
-            // console.log(doc);
-
-            // console.log(doc.img);
-
-            // console.log(this.imgBool + "    PUTOO");
-
-            // console.log(this.imgBool);
-
             
 
 
@@ -378,73 +364,6 @@ app.post("/editar", function (req, res) {
         }
 
 
-        // console.log(this.imgBool);
-
-
-
-        // switch(req.body['myRadio']) {
-        //   case 'home':
-
-
-
-        //     console.log(this.imgBool);
-
-
-        //     db.noticias.update({"_id": ObjectId(req.body.id)},{ $set:{"titulo": req.body.titulo, 
-        //     "sub": req.body.sub, 
-        //     "home": 1,
-        //     "principal": 0,
-        //     "seccion": req.body.seccion,
-        //     "texto": req.body.texto,
-        //     "img": this.imgBool} }, function(err, doc) {
-
-        //       console.log(this.imgBool + "   y bueeeno");
-  
-        //     }   );
-
-
-
-
-
-
-
-
-
-        //     break;
-        //   case 'principal':
-
-
-
-        //     db.noticias.update({"_id": ObjectId(req.body.id)},{ $set:{"titulo": req.body.titulo, 
-        //     "sub": req.body.sub, 
-        //     "home": 0,
-        //     "principal": 1,
-        //     "seccion": req.body.seccion,
-        //     "texto": req.body.texto,
-        //     "img": this.imgBool} }   );
-
-
-
-
-        //     break;
-
-
-        //   case 'normal':
-
-
-
-        //     db.noticias.update({"_id": ObjectId(req.body.id)},{ $set:{"titulo": req.body.titulo, 
-        //     "sub": req.body.sub, 
-        //     "home": 0,
-        //     "principal": 0,
-        //     "seccion": req.body.seccion,
-        //     "texto": req.body.texto,
-        //     "img": this.imgBool} }   );
-
-
-
-        //     break;
-        // }
 
 
 
@@ -467,9 +386,6 @@ app.post("/editar", function (req, res) {
 })();
 
 
-  // console.log(req.body);
-
-  // res.send([{u: "Listo"}]);
 
   
 
