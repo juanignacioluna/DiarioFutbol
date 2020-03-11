@@ -11,8 +11,6 @@ router.get("/", (req, res) => {
 
         try{
 
-            console.log("PRINN");
-
 
             var NotiSchema = new mongoose.Schema({
 
