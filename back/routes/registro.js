@@ -47,15 +47,6 @@ router.post("/", (req, res) => {
 
 
 
-
-            // console.log(req.body.password);
-
-            // res.send([{n: req.body.nombre, u: req.body.usuario}]);
-
-
-
-
-
         } catch(error){
             console.error(error);
         }
