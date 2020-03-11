@@ -45,13 +45,11 @@ router.get("/", (req, res) => {
                 useNewUrlParser: true
             });
 
-            console.log("aaaaaaaaaaaFADFDSFSDFSDFDSFSDa");
 
 
             const ahBo = await Noti.find({home: 1}, null)
             .exec(function (err, docs) {
 
-                // console.log(docs);
 
                 res.send(docs);
 
