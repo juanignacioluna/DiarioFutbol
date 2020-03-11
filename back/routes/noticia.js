@@ -11,8 +11,6 @@ router.get("/", (req, res) => {
 
         try{
 
-            console.log("noticiaaaaa");
-
 
             var NotiSchema = new mongoose.Schema({
 
@@ -59,17 +57,7 @@ router.get("/", (req, res) => {
              });
 
 
-            // const ahBo = await Noti.find()
-            // .exec(function (err, docs) {
-
-            //     console.log(docs);
-
-            //     res.send(docs);
-
-            // });
-
-            
-
+          
 
 
         } catch(error){
