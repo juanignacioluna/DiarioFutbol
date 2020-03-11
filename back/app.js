@@ -204,23 +204,7 @@ app.post("/editar", function (req, res) {
         var ObjectId = require('mongodb').ObjectID;
 
 
-        console.log(req.body.id);
-
-
-        console.log("mama");
-
-        this.imgBool="PELOTUDO DE MIERDA";
-
-        console.log("aaa"+req.body['imgBool']);
-
-
         if(req.body['imgBool']){
-
-          // console.log("ENTROOOO");
-
-          // this.imgBool="http://localhost:3000/images/"+session.pathImg+"";
-
-          // console.log(this.imgBool);
 
           switch(req.body['myRadio']) {
             case 'home':
@@ -283,8 +267,6 @@ app.post("/editar", function (req, res) {
           }
 
         }else{
-
-          console.log("NOOOO ENTRO");
 
           this.imgBool="http://localhost:4200/assets/img/noticias/tevez.jpg";
 
@@ -453,8 +435,6 @@ app.post("/borrar", function (req, res) {
           });
 
 
-          console.log("BEBEEEE");
-
           console.log(session.ultimaNoti);
 
           const db = mongojs('deportesnet');
@@ -549,8 +529,6 @@ app.post("/agregar", function (req, res) {
               useNewUrlParser: true
           });
 
-
-          console.log("BEBEEEE");
 
           console.log(req.body);
 
