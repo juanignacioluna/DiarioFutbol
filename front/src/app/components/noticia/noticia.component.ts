@@ -41,8 +41,6 @@ export class NoticiaComponent implements OnInit {
   imgBool;
 
 
-  AAAAAA="http://localhost:3000/images/image-1580203419187.jpg";
-
 
   public uploader: FileUploader = new FileUploader({
     url: "http://localhost:3000/upload",
@@ -113,13 +111,6 @@ export class NoticiaComponent implements OnInit {
 
                       console.log(this.noticias);
 
-                      // alert(this.noticias[0]['titulo']);
-
-
-
-
-
-
 
                     });
 
@@ -136,13 +127,8 @@ export class NoticiaComponent implements OnInit {
   editar3() {
 
 
-    // alert("ee");
-
 
     $(document).ready(function() {
-
-
-      // alert($("#titulo").text());
 
 
       var titulo = $("#titulo").text().replace(/'/g, '"');
@@ -186,8 +172,6 @@ export class NoticiaComponent implements OnInit {
       $("#editarr").hide();
 
       
-
-      // $("#cargarFoto").attr("type", "file");
 
 
       $("#tipoNoti").show();
@@ -259,9 +243,7 @@ export class NoticiaComponent implements OnInit {
     this.uploader.uploadAll();
 
     if(this.uploader['isUploading']==false){
-      // alert("aa");
-      // console.log(this.uploader);
-      // console.log(this.uploader['isUploading']);
+      
 
           this.http.post<any>('http://localhost:3000/editar', { id: this.id.toString(),
                                                                 seccion: (<HTMLInputElement>document.getElementById("iSe")).value, 
