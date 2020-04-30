@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-file-upload": "^12.2.13",
     "ng2-file-upload": "^1.4.0",
     "popper.js": "^1.16.0",
